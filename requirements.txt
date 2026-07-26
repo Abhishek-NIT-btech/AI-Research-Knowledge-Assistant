@@ -20,7 +20,10 @@ scikit-learn
 
 python-dotenv
 
+
 pydantic
+pydantic-settings
+openai
 
 numpy
 pandas
