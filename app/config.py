@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "data/uploads"
     VECTOR_DB_DIR: str = "data/vector_db"
 
+    OPENAI_API_KEY: str
+
     class Config:
         env_file = ".env"
 

@@ -1,28 +1,24 @@
-# Virtual Environment
+# Python
 venv/
-
-# Python cache
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.sqlite3
 
-# Environment variables
+# Database
+research_assistant.db
+
+# Environment
 .env
+
+# Node
+node_modules/
+dist/
+
+# VS Code
+.vscode/
 
 # macOS
 .DS_Store
 
-# IDE
-.vscode/
-
 # Logs
 *.log
-
-# Test cache
-.pytest_cache/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Generated files
-requirements-lock.txt
