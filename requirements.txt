@@ -14,12 +14,9 @@ langchain-openai
 
 sentence-transformers
 
-tensorflow
-
 scikit-learn
 
 python-dotenv
-
 
 pydantic
 pydantic-settings
