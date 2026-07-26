@@ -1,13 +1,16 @@
-from ollama import chat
+from openai import OpenAI
+from app.config import settings
+
+client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 
 def generate_answer(question: str, context: str):
     """
-    Generate an answer using Ollama (Llama 3.2).
+    Generate an answer using OpenAI.
     """
 
-    response = chat(
-        model="llama3.2",
+    response = client.chat.completions.create(
+        model="gpt-4.1-mini",
         messages=[
             {
                 "role": "system",
@@ -29,6 +32,7 @@ Question:
 """,
             },
         ],
+        temperature=0.2,
     )
 
-    return response["message"]["content"]
+    return response.choices[0].message.content
